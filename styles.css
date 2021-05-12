@@ -112,7 +112,7 @@ input:focus {
 label {
   text-align: end;
 }
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   body {
     background-image: url("/images/bg-intro-desktop.png");
   }
