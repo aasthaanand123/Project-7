@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/images/bg-intro-mobile.png");
+  background-color: #ff7978;
+  background-blend-mode: multiply;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 10vh auto;
+  justify-content: center;
+  align-items: center;
+  max-width: 75vw;
+  width: 70vw;
+}
+section {
+  text-align: center;
+  margin-bottom: 4vh;
+}
+p,
+.highlight,
+.note,
+label {
+  font-size: 0.8rem;
+}
+.highlight {
+  text-align: center;
+  background-color: #5d54a3;
+  padding: 4vw;
+}
+form,
+.highlight {
+  box-shadow: 4px 4px 4px #d96c5b;
+}
+form {
+  margin-top: 4vh;
+  padding: 3vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding-bottom: 5vh;
+}
+input,
+button {
+  padding: 2vw;
+  margin: 1vh;
+  border: 1px solid #e6e6e6;
+}
+button {
+  background-color: #37cc8a;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 4vw;
+}
+
+button:hover,
+button:active {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.highlight,
+form,
+input,
+button {
+  border-radius: 0.8vh;
+}
+.note {
+  text-align: center;
+  color: #c9c7d5;
+  font-size: 0.6rem;
+}
+.note__one,
+.highlight__one {
+  font-weight: 600;
+}
+.note__one {
+  color: #d96c5b;
+}
+input[placeholder] {
+  font-weight: 600;
+}
+input {
+  outline: none;
+}
+input:focus {
+  border: 1px solid #5d54a3;
+}
+.red {
+  border-color: red;
+}
+.color {
+  color: red;
+}
+.error {
+  background-image: url("/images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+label {
+  text-align: end;
+}
+@media (min-width: 700px) {
+  body {
+    background-image: url("/images/bg-intro-desktop.png");
+  }
+  main {
+    margin: 15vh auto;
+    flex-direction: row;
+  }
+  h1 {
+    font-size: 2.8rem;
+    text-align: start;
+    font-weight: 700;
+  }
+  p {
+    font-size: 1rem;
+    text-align: start;
+  }
+  section {
+    margin-right: 4vw;
+    width: 35vw;
+  }
+  .highlight {
+    padding: 1vw;
+  }
+  button,
+  input {
+    padding: 1vw;
+  }
+  .whole {
+    width: 30vw;
+  }
+  form {
+    padding-bottom: 5vh;
+  }
+}
